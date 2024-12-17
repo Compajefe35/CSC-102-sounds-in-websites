@@ -1,0 +1,136 @@
+<!-- David Cabrera -->
+<!DOCTYPE html>
+<html lang="en">
+<!-- The <html> tag is the root element of the HTML document. The "lang" attribute specifies the language of the document. -->
+
+<head>
+    <!-- The <head> tag contains metadata and links for the document. -->
+    <meta charset="UTF-8">
+    <!-- Specifies the character encoding for the document (UTF-8). -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Provides instructions for responsive design. Sets the viewport width to the device width. -->
+    <title>Video Game Music Showcase</title>
+    <!-- Sets the title of the document, shown in the browser's title bar or tab. -->
+    <style>
+        /* Internal CSS to style the elements on the page. */
+        body {
+            font-family: Arial, sans-serif;
+            /* Sets the font to Arial with a fallback to a generic sans-serif font. */
+            background-color: #1e1e2f;
+            /* Sets a dark background color for the page. */
+            color: #ffffff;
+            /* Sets the text color to white for contrast against the dark background. */
+            margin: 0;
+            padding: 0;
+            /* Removes default margin and padding from the body element. */
+        }
+        header {
+            background-color: #3c3c5c;
+            /* Sets a darker background color for the header. */
+            padding: 20px;
+            /* Adds spacing inside the header. */
+            text-align: center;
+            /* Centers the content inside the header. */
+        }
+        header h1 {
+            margin: 0;
+            /* Removes default margin around the <h1> element. */
+        }
+        main {
+            padding: 20px;
+            /* Adds spacing inside the main content area. */
+            display: flex;
+            /* Enables flexbox layout for the child elements. */
+            flex-wrap: wrap;
+            /* Allows child elements to wrap to the next row if needed. */
+            gap: 20px;
+            /* Adds spacing between the flex items. */
+            justify-content: center;
+            /* Centers the flex items horizontally. */
+        }
+        .genre {
+            background-color: #2a2a40;
+            /* Sets a dark background color for each genre section. */
+            border: 2px solid #5a5a7f;
+            /* Adds a border with a slightly lighter color for contrast. */
+            border-radius: 10px;
+            /* Rounds the corners of the genre section. */
+            width: 300px;
+            /* Sets the fixed width of each genre section. */
+            padding: 15px;
+            /* Adds spacing inside each genre section. */
+            text-align: center;
+            /* Centers the content within each genre section. */
+        }
+        .genre h2 {
+            color: #ffcc00;
+            /* Sets the text color of the <h2> elements to a bright yellow. */
+            margin: 10px 0;
+            /* Adds spacing above and below the <h2> elements. */
+        }
+        .genre audio {
+            margin-top: 10px;
+            /* Adds spacing above the audio player. */
+            width: 100%;
+            /* Makes the audio player fill the width of its container. */
+        }
+    </style>
+</head>
+
+<body>
+    <!-- The <body> tag contains the content displayed on the page. -->
+
+    <header>
+        <!-- The <header> tag contains introductory content or navigational links. -->
+        <h1>Video Game Music Showcase</h1>
+        <!-- The <h1> element is the main heading for the page. -->
+    </header>
+
+    <main>
+        <!-- The <main> tag is the primary content area of the document. -->
+
+        <div class="genre">
+            <!-- A container for the "Action/Adventure" genre. -->
+            <h2>Action/Adventure</h2>
+            <!-- A subheading for the genre. -->
+
+            <audio controls>
+                <!-- Adds an audio player with controls. -->
+                <source src="sounds/Warriors of the Night.mp3" type="audio/mpeg">
+                <!-- Specifies the audio file and its format. -->
+                Your browser does not support the audio element.
+                <!-- Fallback text displayed if the browser doesn't support the audio player. -->
+            </audio>
+        </div>
+
+        <div class="genre">
+            <!-- A container for the "RPG" genre. -->
+            <h2>RPG</h2>
+            <audio controls>
+                <source src="sounds/Chasing Shadows.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+
+        <div class="genre">
+            <!-- A container for the "Sci-Fi" genre. -->
+            <h2>Sci-Fi</h2>
+            <audio controls>
+                <source src="sounds/Celestial Echoes.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+
+        <div class="genre">
+            <!-- A container for the "Platformer" genre. -->
+            <h2>Platformer</h2>
+            <audio controls>
+                <source src="sounds/Dreamscape Journey.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+
+    </main>
+</body>
+
+</html>
